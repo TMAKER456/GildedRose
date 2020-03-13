@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.App", "GildedRose.App\GildedRose.App.csproj", "{7597561F-0FB3-4172-8565-DBA9848DF1B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRose.App", "GildedRose.App\GildedRose.App.csproj", "{7597561F-0FB3-4172-8565-DBA9848DF1B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.UnitTest", "GildedRose.UnitTest\GildedRose.UnitTest.csproj", "{02BEAE1F-5D74-4333-8930-727D0730ADBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7597561F-0FB3-4172-8565-DBA9848DF1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7597561F-0FB3-4172-8565-DBA9848DF1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7597561F-0FB3-4172-8565-DBA9848DF1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02BEAE1F-5D74-4333-8930-727D0730ADBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02BEAE1F-5D74-4333-8930-727D0730ADBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02BEAE1F-5D74-4333-8930-727D0730ADBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02BEAE1F-5D74-4333-8930-727D0730ADBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
