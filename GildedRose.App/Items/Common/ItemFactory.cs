@@ -1,4 +1,4 @@
-﻿namespace GildedRose.App.Items
+﻿namespace GildedRose.App.Items.Common
 {
     internal class ItemFactory
     {

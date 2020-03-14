@@ -7,3 +7,5 @@
 /GildedRose.App/bin/Debug/netcoreapp3.1
 /GildedRose.UnitTest/obj
 /GildedRose.UnitTest/bin/Debug/netcoreapp3.1
+/GildedRose.App/GildedRose.App.csproj.user
+/GildedRose.UnitTest/GildedRose.UnitTest.csproj.user

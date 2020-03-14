@@ -1,6 +1,6 @@
 ﻿namespace GildedRose.App.Inventory
 {
-    using Items;
+    using Items.Common;
 
     public class InventoryManager
     {
