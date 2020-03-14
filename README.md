@@ -6,6 +6,10 @@ Both projects target .NET Core 3.1.
 Latest C# 8 language features have been used, so Visual Studio 2019 is required, or installation of the Microsoft.Net.Compilers NuGet package into an earlier version of Visual Studio.
 
 
+To build, clone/download the master branch. Open the .sln in Visual Studio, and it should build without any additional steps.
+Ensure that the GuildedRose.App project is set as the startup project, and press F5 to run. Or after building the solution, navigate to the bin folder, and run the GildedRose.App.exe file.
+
+
 The console application can be used in two ways:
 
 1. With command line arguments:
