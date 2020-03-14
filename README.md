@@ -20,6 +20,6 @@ Without command line arguments, the application will prompt the user for an inpu
 It will keep asking for and processing items until "Exit" is entered, at which point the application will exit.
 
 
-Error Handling
+Error Handling:
 If an invalid input is entered, e.g "qwerty", then an error will be outputted. 
 There is also error handling around the limits of what sellin and quality values can be entered.
