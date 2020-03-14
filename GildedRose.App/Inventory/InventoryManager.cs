@@ -12,7 +12,7 @@
 
             item.AdvanceDay();
 
-            return item.ToString();
+            return item.ToOutputString();
         }
     }
 }

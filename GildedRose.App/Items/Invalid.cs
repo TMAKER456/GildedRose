@@ -5,6 +5,7 @@
     /// <summary>
     /// Invalid Item
     /// </summary>
+    [ItemName("Invalid Item")]
     internal class Invalid : IItem
     {
         int IItem.Quality => default;
@@ -16,6 +17,6 @@
         /// </summary>
         void IItem.AdvanceDay() { }
 
-        public override string ToString() => "NO SUCH ITEM";
+        public string ToOutputString() => "NO SUCH ITEM";
     }
 }

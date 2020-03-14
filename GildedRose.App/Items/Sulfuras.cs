@@ -6,6 +6,7 @@
     /// Sulfuras Item
     /// </summary>
     /// <remarks>Never has to be sold or decreases in quality.</remarks>
+    [ItemName(nameof(Sulfuras))]
     internal sealed class Sulfuras : ItemBase
     {
         public Sulfuras(int sellIn, int quality) : base(sellIn, quality)

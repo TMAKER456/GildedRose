@@ -8,6 +8,6 @@
 
         void AdvanceDay();
 
-        string ToString();
+        string ToOutputString();
     }
 }

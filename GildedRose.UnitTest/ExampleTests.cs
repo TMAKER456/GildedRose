@@ -2,13 +2,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace GildedRose.UnitTest
 {
-    using App.Inventory;
-
     [TestClass]
-    public class ExampleTests
+    public class ExampleTests : TestBase
     {
-        private readonly InventoryManager inventoryProcessor = new InventoryManager();
-
         [TestMethod]
         public void AgedBrie() => TestAndAssert("Aged Brie 1 1", "Aged Brie 0 2");
 
@@ -35,8 +31,5 @@ namespace GildedRose.UnitTest
 
         [TestMethod]
         public void Conjured2() => TestAndAssert("Conjured -1 5", "Conjured -2 1");
-
-
-        private void TestAndAssert(string input, string expectedOutput) => Assert.Equals(inventoryProcessor.ProcessItem(input), expectedOutput);
     }
 }
