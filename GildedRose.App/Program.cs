@@ -4,20 +4,43 @@ namespace GildedRose.App
 {
     using Inventory;
 
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter item:");
-            string inputData = Console.ReadLine();
-
             InventoryManager inventoryManager = new InventoryManager();
 
-            string outputData = inventoryManager.ProcessItem(inputData);
+            if (args?.Length > 0)
+            {
+                TryProcessInput(inventoryManager, string.Join(' ', args));
+            }
+            else
+            {
+                while (true)
+                {
+                    Console.WriteLine("Enter item:");
+                    string inputData = Console.ReadLine();
 
-            Console.WriteLine(outputData);
+                    if (inputData.Equals("Exit", StringComparison.OrdinalIgnoreCase)) return;
 
-            Console.ReadLine();
+                    TryProcessInput(inventoryManager, inputData);
+
+                    Console.WriteLine();
+                }
+            }
+        }
+
+        private static void TryProcessInput(InventoryManager inventoryManager, string inputData)
+        {
+            try
+            {
+                string outputData = inventoryManager.ProcessItem(inputData);
+                Console.WriteLine(outputData);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error: {e.Message}");
+            }
         }
     }
 }
